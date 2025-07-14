@@ -1,0 +1,250 @@
+/* Reset & Base Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #262626;
+}
+
+/* Login Container */
+.login-container {
+  width: 350px;
+  margin: 30px auto 20px; /* 상단 마진 30px로 증가, 하단 20px로 감소 */
+}
+
+/* Login Box */
+.login-box {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  padding: 20px 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.logo {
+  margin: 22px auto 12px;
+}
+
+/* Form Styles */
+input {
+  width: 100%;
+  padding: 9px 8px 7px;
+  margin-bottom: 6px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background: #fafafa;
+  font-size: 12px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a8a8a8;
+}
+
+button {
+  width: 100%;
+  padding: 7px;
+  margin: 8px 0;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 1;
+}
+
+/* Divider */
+.divider {
+  margin: 10px 0;
+  color: #8e8e8e;
+  font-weight: bold;
+  font-size: 13px;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  display: inline-block;
+  width: 40%;
+  height: 1px;
+  background-color: #dbdbdb;
+  position: absolute;
+  top: 50%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Links */
+.fb-login {
+  color: #385185;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin: 12px 0;
+}
+
+.forgot-password {
+  color: #00376b;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* Signup Box */
+.signup-box {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-box a {
+  color: #0095f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Download Box */
+.download-box {
+  text-align: center;
+  font-size: 14px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.download-buttons img {
+  height: 40px;
+}
+/* 로그인 버튼 기본 상태 */
+button[type="submit"] {
+  background-color: #8db5f4;
+  color: white;
+  cursor: default;
+  pointer-events: none; /* 클릭 이벤트 차단 */
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+/* 활성화 상태 */
+button[type="submit"].active {
+  background-color: #5b94ee;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  opacity: 1;
+}
+
+/* 호버 상태 (활성화 시에만 적용) */
+button[type="submit"].active:hover {
+  background-color: #5177e9;
+}
+
+/* 클릭 상태 (활성화 시에만 적용) */
+button[type="submit"].active:active {
+  background-color: #3a5bc7;
+  transform: scale(0.98);
+}
+/* 메타 푸터 스타일 */
+.meta-footer {
+  width: 100%;
+  max-width: 350px;
+  margin: 30px auto 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.meta-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 12px;
+  margin-bottom: 12px;
+}
+
+.meta-links a {
+  color: #737373;
+  font-size: 11px;
+  text-decoration: none;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.language-selector, .copyright {
+  color: #737373;
+  font-size: 11px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.language-selector {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.copyright {
+  margin-left: 15px;
+}
+/* 푸터 컨테이너 */
+.footer-container {
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+}
+
+/* 메타 링크 스타일 */
+.meta-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 12px;
+  margin-bottom: 12px;
+}
+
+.meta-links a {
+  color: #737373;
+  font-size: 11px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* 하단 영역 (언어 + 저작권) */
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.language, .copyright {
+  color: #737373;
+  font-size: 11px;
+}
+
+.language {
+  cursor: pointer;
+}
